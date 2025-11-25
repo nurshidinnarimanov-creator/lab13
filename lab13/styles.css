@@ -1,0 +1,147 @@
+body {
+    font-family: "Orbitron", "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #0a0220, #000);
+    color: #e0e0ff;
+    padding: 30px 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #8b5cf6;
+    text-shadow: 0 0 10px #8b5cf6, 0 0 25px #4c1d95;
+    margin-bottom: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 320px;
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 20px;
+    background: #0c021e;
+    
+    border: 1px solid rgba(147, 51, 234, 0.6);
+    box-shadow:
+        0 0 20px rgba(147, 51, 234, 0.6),
+        0 0 35px rgba(0, 217, 255, 0.35);
+
+    backdrop-filter: blur(12px);
+}
+
+input {
+    width: 90%;
+    padding: 14px;
+    margin-top: 12px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(117, 51, 234, 0.8);
+
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+
+    outline: none;
+
+    box-shadow:
+        0 0 12px rgba(147, 51, 234, 0.7),
+        inset 0 0 10px rgba(147, 51, 234, 0.4);
+
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00eaff;
+    box-shadow:
+        0 0 12px #00eaff,
+        inset 0 0 12px rgba(0, 234, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 18px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(90deg, #a855f7, #00eaff);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 0 20px rgba(168, 85, 247, 0.7),
+        0 0 25px rgba(0, 234, 255, 0.5);
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 30px rgba(118, 85, 247, 0.8),
+        0 0 40px rgba(0, 234, 255, 0.7);
+}
+
+
+#list div {
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #8b5cf6;
+    color: #dcd6ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px #8b5cf6;
+    transition: 0.2s ease;
+}
+
+#list div:hover {
+    transform: translateX(4px);
+    box-shadow: 0 0 18px #c084fc;
+}
+
+#list div button {
+    width: auto;
+    padding: 6px 12px;
+    background: #ff006a;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #ff006a;
+    transition: 0.2s ease;
+}
+
+#list div button:hover {
+    background: #ff4da6;
+    box-shadow: 0 0 20px #ff4da6;
+    transform: scale(1.07);
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+    .card {
+        padding: 18px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    input {
+        font-size: 14px;
+    }
+    #list div {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

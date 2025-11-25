@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 13 – Коллекции JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Лаборатория 13 – Работа с коллекциями</h2>
+
+<div class="card">
+    <h3>Добавить студента</h3>
+    <input id="nameInput" type="text" placeholder="Имя студента">
+    <button onclick="addStudent()">Добавить</button>
+</div>
+
+<div class="card">
+    <h3>Поиск студента</h3>
+    <input id="searchInput" type="text" placeholder="Введите имя">
+    <button onclick="searchStudent()">Найти</button>
+</div>
+
+<div class="card">
+    <h3>Список студентов</h3>
+    <button onclick="sortStudents()">Сортировать по имени</button>
+    <div id="list"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
